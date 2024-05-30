@@ -7,8 +7,8 @@ export const routes: Routes = [
   { path: 'products-details/:id',
   loadComponent: ()=> import('./features/products/details/details.component')
   },
-  { path: 'products',
-  loadComponent: ()=> import('./features/products/products.component')
+  { path: 'checkout',
+  loadComponent: ()=> import('./features/checkout/checkout.component')
   },
   { path:'',redirectTo:'products',pathMatch:'full'},
   { path:'**',redirectTo:'products',pathMatch:'full'},

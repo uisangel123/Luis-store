@@ -1,1 +1,4 @@
-export const environment = {};
+export const environment = {
+apiURL: 'http://fakestoreapi.com',
+
+};
