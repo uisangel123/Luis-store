@@ -1,0 +1,22 @@
+.card {
+  width: 33%;
+  margin-bottom: 10px;
+  min-width: 380px;
+}
+.contCard {
+
+  display: flex;
+  justify-content: space-around;
+}
+@media (max-width: 990px) {
+  .card {
+    width: 100%; /* Centra el elemento horizontalmente */
+    /* Ajusta esto según sea necesario */
+
+  }
+  .contCard {
+    width: 100%; /* Centra el elemento horizontalmente */
+    /* Ajusta esto según sea necesario */
+
+  }
+}

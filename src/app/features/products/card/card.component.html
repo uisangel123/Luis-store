@@ -1,15 +1,16 @@
 
-<div class="col-lg-4 col-md-6 portfolio-item filter-app wow fadeInUp" style="width: 100%;" >
+<div class="col-lg-4 col-md-6 portfolio-item filter-app wow fadeInUp card" >
   <div class="portfolio-wrap">
     <figure>
-      <img src="assets/img/portfolio/portfolio-1.jpg" class="img-fluid" alt="">
+      <img src="{{ product().image }}" class="img-fluid" alt="{{ product().title }}">
       <a href="assets/img/portfolio/portfolio-1.jpg" data-gallery="portfolioGallery" class="link-preview portfolio-lightbox" title="Preview"><i class="bx bx-plus"></i></a>
       <a href="portfolio-details.html" class="link-details" title="More Details"><i class="bx bx-link"></i></a>
     </figure>
 
     <div class="portfolio-info">
-      <h4><a href="portfolio-details.html">App 1</a></h4>
-      <p>App</p>
+
+      <h5>{{ product().title }}</h5>
+      <p>{{ product().category }}</p>
     </div>
   </div>
 </div>

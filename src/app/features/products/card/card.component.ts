@@ -1,4 +1,5 @@
-import { Component } from '@angular/core';
+import { Component, input } from '@angular/core';
+import { product } from '@shared/models/products.interface';
 
 @Component({
   selector: 'app-card',
@@ -8,5 +9,5 @@ import { Component } from '@angular/core';
   styleUrl: './card.component.css'
 })
 export class CardComponent {
-
+  product = input.required<product>();
 }
