@@ -1,5 +1,5 @@
 import { productsService } from '@api/products.service';
-import { Component } from '@angular/core';
+import { Component, inject } from '@angular/core';
 import { CardComponent } from './card/card.component';
 
 
@@ -13,6 +13,6 @@ import { CardComponent } from './card/card.component';
 })
 export default class ProductsComponent {
   private readonly productSvc = inject(productsService);
-  // products = this.productSvc.products;
+  products = this.productSvc.products;
 }
 
