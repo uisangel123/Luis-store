@@ -3,14 +3,17 @@
   <div class="portfolio-wrap">
     <figure>
       <img src="{{ product().image }}" class="img-fluid" alt="{{ product().title }}">
-      <a href="assets/img/portfolio/portfolio-1.jpg" data-gallery="portfolioGallery" class="link-preview portfolio-lightbox" title="Preview"><i class="bx bx-plus"></i></a>
-      <a href="portfolio-details.html" class="link-details" title="More Details"><i class="bx bx-link"></i></a>
+      <a (click)="onAddToCart()" data-gallery="portfolioGallery" class="link-preview portfolio-lightbox" title="Preview"><i class="bx bx-plus"></i></a>
+      <a [routerLink]="['/products',(product().id)]"   class="link-details" title="More Details"><i class="bx bx-link"></i></a>
     </figure>
+    <button type="submit" [routerLink]="['/products',(product().id)]"></button>
 
-    <div class="portfolio-info">
+    <div class="portfolio-info" style="height: auto;" >
 
-      <h5>{{ product().title }}</h5>
+      <h5>{{ product().price }}</h5>
+      <h6><a [routerLink]="['/products',(product().id)]">{{ product().title | slice:0:30 }}</a></h6>
       <p>{{ product().category }}</p>
+
     </div>
   </div>
 </div>
